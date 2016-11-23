@@ -1,6 +1,4 @@
----
-output: html_document
----
+
 ## Summary
 
 This project was completed as the final project for the Practical Machine Learning Class offered by faculty at Johns Hopkins and hosted by Coursera. This project uses accelerometer data (http://groupware.les.inf.puc-rio.br/har) from six participants to try to determine how well they are performing barbell lifts. Four separate accelerometers (mounted to the belt, forearm, arm and dumbell of each participant) collect data as each participant peforms the exercise correctly (classified as A) and incorrectly in four different ways (classified as B-E). This labeled training data is used to fit a model that can predict the quality of future exercises. Based on the accuracy of the validation set (20% of the available data) described below, the expected out of sample error is <1%. Default values for cross-validation within the random forest package are used.
@@ -20,4 +18,4 @@ This 3% increase in accuracy comes at the cost of significantly more computing t
 ## Final Results
 Confusion matrices are shown at https://github.com/aiedward/PML-Project/blob/master/figures/IndividualConfusionMatrix.png using random forest models fit to each individual user. On the vertical axis the actual classes from the labelled validation data are shown. On the horizontal axis, the correspondind frequency of predicted classes is shown.
 
-The figure at https://github.com/aiedward/PML-Project/blob/master/figures/all%20users%20combinedConfusionMatrix.png shows the confusion matrix for the cummulative model trained collectively on all users at once. For all classes, the validation accuracy is greater than 98%.
+The figure at https://github.com/aiedward/PML-Project/blob/master/figures/all%20users%20combinedConfusionMatrix.png shows the confusion matrix for the cummulative model trained collectively on all users at once. For all classes, the validation accuracy is greater than 97%.
