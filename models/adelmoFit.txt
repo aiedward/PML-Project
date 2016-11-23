@@ -1,0 +1,16 @@
+adelmoFit
+
+Call:
+ randomForest(x = x, y = y, mtry = param$mtry, proximity = TRUE) 
+               Type of random forest: classification
+                     Number of trees: 500
+No. of variables tried at each split: 27
+
+        OOB estimate of  error rate: 0.77%
+Confusion matrix:
+    A   B   C   D   E class.error
+A 932   0   0   0   0 0.000000000
+B   5 613   3   0   0 0.012882448
+C   0   3 591   6   0 0.015000000
+D   0   0   5 407   0 0.012135922
+E   0   1   0   1 547 0.003642987

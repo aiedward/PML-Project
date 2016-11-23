@@ -1,3 +1,6 @@
+---
+output: html_document
+---
 ## Summary
 
 This project was completed as the final project for the Practical Machine Learning Class offered by faculty at Johns Hopkins and hosted by Coursera. This project uses accelerometer data (http://groupware.les.inf.puc-rio.br/har) from six participants to try to determine how well they are performing barbell lifts. Four separate accelerometers (mounted to the belt, forearm, arm and dumbell of each participant) collect data as each participant peforms the exercise correctly (classified as A) and incorrectly in four different ways (classified as B-E). This labeled training data is used to fit a model that can predict the quality of future exercises. Based on the accuracy of the validation set (20% of the available data) described below, the expected out of sample error is <1%. Default values for cross-validation within the random forest package are used.
@@ -10,9 +13,9 @@ In addition to separating the data into training and validation sets, columns wi
 
 ## Validation Accuracy vs. Training Data Fraction
 
-As shown at https://github.com/aiedward/PML-Project/blob/master/figures/ValidationAccuracy.png, the accuracy on the validation set increases as more of the training data is sued to fit the model. However, even with only 20% of the data the cummulative model achieves 96.6% accuracy. Using all of the available data, this accuracy increases to 99.2%
+As shown at https://github.com/aiedward/PML-Project/blob/master/figures/ValidationAccuracy.png, the accuracy on the validation set increases as more of the training data is sued to fit the model. However, even with only 20% of the data the cummulative model achieves 96.4% accuracy. Using all of the available data, this accuracy increases to 99.4%
 
-This 2.6% increase in accuracy comes at the cost of significantly more computing time (218 minutes rather than 25 minutes). It should be noted that these times only serve as rough estimates. All analysis was performed on the same desktop computer (Processor: Intel i7-4790 Quad-Core 3.60 GHz, RAM: 32GB, OS: Windows 7), but other work was performed on the computer intermittently throughout the process. The time taken to train each model is shown at https://github.com/aiedward/PML-Project/blob/master/figures/ModelFitTime.png.
+This 3% increase in accuracy comes at the cost of significantly more computing time (283 minutes rather than 15 minutes). It should be noted that these times only serve as rough estimates. All analysis was performed on the same desktop computer (Processor: Intel i7-4790 Quad-Core 3.60 GHz, RAM: 32GB, OS: Windows 7), but other work was performed on the computer intermittently throughout the process. The time taken to train each model is shown at https://github.com/aiedward/PML-Project/blob/master/figures/ModelFitTime.png.
 
 ## Final Results
 Confusion matrices are shown at https://github.com/aiedward/PML-Project/blob/master/figures/IndividualConfusionMatrix.png using random forest models fit to each individual user. On the vertical axis the actual classes from the labelled validation data are shown. On the horizontal axis, the correspondind frequency of predicted classes is shown.

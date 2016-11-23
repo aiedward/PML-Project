@@ -1,0 +1,16 @@
+jeremyFit
+
+Call:
+ randomForest(x = x, y = y, mtry = param$mtry, proximity = TRUE) 
+               Type of random forest: classification
+                     Number of trees: 500
+No. of variables tried at each split: 2
+
+        OOB estimate of  error rate: 0.81%
+Confusion matrix:
+    A   B   C   D   E class.error
+A 942   0   0   0   0 0.000000000
+B   4 384   4   0   0 0.020408163
+C   0   2 519   1   0 0.005747126
+D   0   0   8 409   1 0.021531100
+E   0   0   0   2 448 0.004444444

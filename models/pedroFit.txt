@@ -1,0 +1,16 @@
+pedroFit
+
+Call:
+ randomForest(x = x, y = y, mtry = param$mtry, proximity = TRUE) 
+               Type of random forest: classification
+                     Number of trees: 500
+No. of variables tried at each split: 2
+
+        OOB estimate of  error rate: 0.53%
+Confusion matrix:
+    A   B   C   D   E class.error
+A 512   0   0   0   0 0.000000000
+B   3 401   0   0   0 0.007425743
+C   0   1 399   0   0 0.002500000
+D   0   0   6 370   0 0.015957447
+E   0   0   0   1 397 0.002512563
